@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [{
     path:'cidades',
-    loadChildren: './pages/cidades/cidades.module#CidadesModule'
+    loadChildren: () => import('./pages/cidades/cidades.module').then(m => m.CidadesModule)
   },
 
   {
