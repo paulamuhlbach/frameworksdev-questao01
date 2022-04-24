@@ -1,19 +1,12 @@
-import { BaseResourceModel } from '../../../shared/models/base-resource.model';
 import { TipoProduto } from '../../tipos-produtos/shared/tipo-produto';
 
-export class Produto extends BaseResourceModel{
-   constructor(
-     public id?: number,
-     public idTipoProduto?: number,
-     public tipoProduto?: TipoProduto,
-     public produto?: string,
-     public valor?: string,
-     public medida?: string
-   ){
-     super();
-   }
+export interface Produto {
 
-   static fromJson(jsonData: any): Produto{
-     return Object.assign(new Produto(), jsonData);
- }
+     id: number,
+     idTipoProduto: number,
+     tipoProduto: TipoProduto,
+     produto: string,
+     valor: string,
+     medida: string
+
 }

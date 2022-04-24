@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { SharedModule } from "../../shared/shared.module";
 
 import { CidadesComponent } from './cidades.component';
 import { CidadesRoutingModule } from './cidades-routing.module';
@@ -8,7 +7,6 @@ import { CidadesRoutingModule } from './cidades-routing.module';
   declarations: [ CidadesComponent],
 
   imports: [
-    SharedModule,
     CidadesRoutingModule
   ]
 })

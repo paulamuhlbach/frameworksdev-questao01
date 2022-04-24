@@ -1,7 +1,19 @@
 <div>
-  <h4>Lista das cidades works!</h4>
-  <ul *ngFor="let cidade of resources">
-    <li>{{cidade.id}} - {{cidade.cidade}} / {{cidade.estado}}</li>
-
-  </ul>
-</div>>
+  <input type="text" name="productName">
+  <button [hidden]="add" (click)="addCidade()">add Cidade</button>
+  <button [hidden]="edit" (click)="updateCidade()">Update Cidade</button>
+</div>
+<table id="cidades">
+  <tr>
+    <th>S/N</th>
+    <th>Name</th>
+    <th>Update</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let cidade of cidades">
+    <td>{{cidade.id}}</td>
+    <td>{{cidade.nome}}</td>
+    <td><button (click)="setCidadeEdit(cidade)">Update</button></td>
+    <td><button (click)="removeCidade(cidade)">Delete</button></td>
+  </tr>
+</table>

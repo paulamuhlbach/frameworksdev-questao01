@@ -32,11 +32,11 @@ export class InMemoryDatabase implements InMemoryDbService {
     ];
 
     const cidades: Cidade[] = [
-      { id: 1, cidade: 'Porto Alegre', estado: 'RS'},
-      { id: 2, cidade: 'Eldorado do Sul', estado: 'RS'},
-      { id: 3, cidade: 'São Leopoldo', estado: 'RS'},
-      { id: 4, cidade: 'Guaíba', estado: 'RS'},
-      { id: 5, cidade: 'Canoas', estado: 'RS'}
+      { id: 1, nome: 'Porto Alegre', estado: 'RS'},
+      { id: 2, nome: 'Eldorado do Sul', estado: 'RS'},
+      { id: 3, nome: 'São Leopoldo', estado: 'RS'},
+      { id: 4, nome: 'Guaíba', estado: 'RS'},
+      { id: 5, nome: 'Canoas', estado: 'RS'}
     ];
 
     const clientes: Cliente[] = [
